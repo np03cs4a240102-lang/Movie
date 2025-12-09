@@ -1,0 +1,129 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ffe6fa, #e3f2ff, #e8ffe6);
+    padding: 30px;
+    color: #333;
+}
+
+/* TITLE */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    background: linear-gradient(90deg, #ff8de4, #7be7ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* FORM */
+form {
+    background: #ffffffcc;
+    padding: 20px;
+    border-radius: 12px;
+    max-width: 400px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+form input {
+    padding: 12px;
+    border: 2px solid #ffc8f3;
+    border-radius: 8px;
+}
+
+form input:focus {
+    border-color: #7beaff;
+    box-shadow: 0 0 8px #b9f4ff;
+}
+
+form button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(90deg, #ff92e0, #72deff);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* SEARCH BAR */
+#search-input {
+    padding: 12px;
+    width: 100%;
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    border: 2px solid #ffc8f3;
+}
+
+/* MOVIE LIST */
+#movie-list {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+/* MOVIE CARD */
+.movie-item {
+    background: linear-gradient(135deg, #ffcaf6, #acf7ff);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.movie-item p {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Buttons */
+.movie-item button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    font-size: 14px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+
+.movie-item button.edit {
+    background: #28a745;
+}
+
+.movie-item button.delete {
+    background: #dc3545;
+}
+
+.movie-item button.edit:hover {
+    background: #1f8637;
+}
+
+.movie-item button.delete:hover {
+    background: #a92331;
+}
